@@ -1,0 +1,106 @@
+ /* CONFIGURAÇÕES GERAIS */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Georgia, serif;
+        background: linear-gradient(135deg, #071f19, #123d2c);
+        color: white;
+    }
+    
+    /* CONTEÚDO PRINCIPAL */
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+    }
+  
+    /* TRENÓ */
+    
+    .treno {
+        position: absolute;
+        top: 12%;
+        font-size: 45px;
+    
+        animation:
+            atravessar 12s linear infinite;
+    }
+    
+    @keyframes atravessar {
+        0% {
+            left: -100px;
+        }
+    
+        100% {
+            left: 110%;
+        }
+    }
+    
+    
+    /* IMAGEM E CONTEÚDO */
+    
+    .imagem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+ 
+    h1 {
+        font-size: 55px;
+        color: #f5d98a;
+        margin-bottom: 20px;
+        transition: 0.3s;
+    }
+    
+    h1:hover {
+        transform: scale(1.08);
+    }
+    
+    /* ÁRVORE */
+    
+    .arvore {
+        font-size: 80px;
+        margin-bottom: 20px;
+    
+        animation:
+            balancar 3s ease-in-out infinite alternate;
+    }
+    
+ 
+@keyframes balancar {
+    0% {
+        margin-top: -5px;
+    }
+
+    100% {
+        margin-top: 5px;
+    }
+}
+    
+    
+    /* MENSAGEM */
+    
+    p {
+        font-size: 20px;
+        color: #e8eee9;
+        margin-bottom: 30px;
+    }
+    
+    /* RODAPÉ */
+    
+    footer {
+        color: #d7bd71;
+        font-size: 15px;
+       
+    }
+  
